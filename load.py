@@ -21,7 +21,7 @@ driver = webdriver.Edge(options=edge_options)
 # 先访问站点基础页面（比如首页），让浏览器先有站点的基础上下文，再设置 Cookie 更有效
 driver.get('https://report.iresearch.cn/')  # 替换为实际站点域名
 
-# 逐个设置关键 Cookie ，这里示例写死值，实际要替换成你抓包拿到的真实值
+# 逐个设置关键 Cookie 
 cookies = [
     {'name': 'iRsUserType', 'value': '49'},
     {'name': 'iRsUserPhoto', 'value': '103a112a106a46a120a116a47a115a101a103a97a109a105a47a101a100a117a108a99a110a105a47a110a99a46a104a99a114a97a101a115a101a114a105a46a110a109a117a108a111a99a47a47a58a112a116a116a104'},  # 替换为完整真实值
@@ -35,7 +35,6 @@ cookies = [
     {'name': 'Hm_lvt_c33e4c1e69eca76a2e522c20e59773f6', 'value': '1748942804,1748947895,1749006115,1749097730'},
     {'name': 'Hm_lpvt_c33e4c1e69eca76a2e522c20e59773f6', 'value': '1749099415'},
     {'name': 'HMACCOUNT', 'value': '9DB3474109665891'},
-    # 继续添加其他 iRs 开头等关键 Cookie 
 ]
 
 for cookie in cookies:
@@ -51,7 +50,7 @@ time.sleep(3)  # 等待页面加载
 
 # 读取文件中的链接（假设链接文件为当前目录下的generated_links.txt）
 def read_links():
-    with open("generated_links.txt", "r", encoding="utf-8") as f:
+    with open("load_links.txt", "r", encoding="utf-8") as f:
         links = [line.strip() for line in f if line.strip()]
     return list(set(links))  # 去重处理
 
