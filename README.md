@@ -5,6 +5,7 @@
 该项目主要用于从艾瑞网爬取不付费的报告信息，标题、行业、作者、摘要和报告原件。
 
 ## 二、项目结构
+![image](https://github.com/user-attachments/assets/f3f0bf77-8fc6-4aed-9fd3-0f74ff031c82)
 
 
 ## 三、环境要求
