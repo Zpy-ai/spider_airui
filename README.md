@@ -23,16 +23,11 @@
 
 2.运行过程中，程序会在终端输出提取和生成链接的相关信息，如：
 
-提取的数字ID列表：
-
-['12345', '67890', ...]
-
-已保存结果到 extracted_ids.txt
 
 生成链接: https://report.iresearch.cn/include/ajax/user_ajax.ashx?reportid=12345&work=rdown&url=https%3A%2F%2Freport.iresearch.cn%2Freport%2F202505%2F12345.shtml
 ...
 
-已保存生成的链接到 generated_links.txt
+已保存生成的下载链接到 load_links.txt
 
 ### 4.3 查看结果
 
