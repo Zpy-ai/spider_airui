@@ -5,7 +5,18 @@
 该项目主要用于从艾瑞网爬取不付费的报告信息，标题、行业、作者、摘要和报告原件。
 
 ## 二、项目结构
-![image](https://github.com/user-attachments/assets/f3f0bf77-8fc6-4aed-9fd3-0f74ff031c82)
+```plaintext
+spider_airui/
+├─ utils/           # 工具模块目录
+│  └─ config.py     # 配置文件
+├─ main.py          # 主程序入口（核心爬取逻辑）
+├─ load.py          # 链接处理与数据加载模块
+├─ found_links.txt  # 爬取过程中发现的原始链接（临时存储）
+├─ load_links.txt   # 生成的待下载链接列表
+├─ iresearch_reports.csv # 最终爬取结果（csv格式）
+├─ README.md        # 项目说明文档
+└─ requirement.txt  # 依赖库清单
+```
 
 
 ## 三、环境要求
